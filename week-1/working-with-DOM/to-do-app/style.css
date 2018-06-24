@@ -1,0 +1,39 @@
+/* to do app
+- write users stories
+- break first feature down in to steps
+- make first feature
+- make todo app
+
+1. make a list - a) make a js file,
+                          b) data model - it is going to be an array of string(todo items),
+                          c) iterate over array and log,
+                          d) find out what method to use to write it,(create element, append)
+                          e) write our data to the DOM: - select the list <ul>
+                                                        - append child to ul
+
+2. add items to the list - a) create input field
+                           b) create function x to take input value
+                           c) onclick/onsubmit (tied to a form/button) event listener to run f(x)
+                           d) add item to a list of to-todo
+                           e) run display function
+3. check the item off the list
+- you always have to break your problem into smaller steps
+*/
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  text-decoration: none;
+  padding-top: 15px;
+  font-family: helvetica,sans-serif;
+}
+
+h1 {
+  font-family: helvetica,sans-serif;
+  font-size:60px;
+  color: gray;
+  text-shadow: rgba(255, 0, 0, 0.5);
+}
