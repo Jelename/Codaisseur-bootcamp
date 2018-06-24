@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+
+    document.getElementById('h').innerHTML = h
+    document.getElementById('m').innerHTML = m
+    document.getElementById('s').innerHTML = s
+
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<style media="screen">
+  * {
+    font-size: 120px;
+    font-family: sans-serif;
+    float: left;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  #h {
+    color: blue;
+  }
+  #m {
+    color: orange;
+  }
+  #s {
+    color: red;
+  }
+  span {
+    color: gray;
+  }
+</style>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt">
+  <div id="h"></div>
+  <span>:</span>
+  <div id="m"></div>
+  <span>:</span>
+  <div id="s"></div>
+</div>
+
+</body>
+</html>
